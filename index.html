@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Malagboters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #7E57C2 0%, #5C6BC0 100%);
+            color: white;
+            padding: 2.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #FFD54F, #FFCA28, #FFB300);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo-icon {
+            font-size: 3rem;
+            color: #FFD54F;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+        
+        .app-name {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .app-tagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-top: 8px;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            text-align: right;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 1.2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+        
+        .email-link {
+            color: #FFD54F;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s;
+            padding: 8px 15px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 6px;
+        }
+        
+        .email-link:hover {
+            color: #FFECB3;
+            background-color: rgba(0, 0, 0, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        /* Main Content Styles */
+        .privacy-policy {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            padding: 3.5rem;
+            margin: 3rem 0;
+            position: relative;
+        }
+        
+        .policy-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .policy-header h1 {
+            font-size: 2.8rem;
+            color: #5C6BC0;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #7E57C2, #5C6BC0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .effective-date {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+        
+        /* Table of Contents */
+        .toc {
+            background-color: #f8f9ff;
+            border-left: 5px solid #7E57C2;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 4px 12px rgba(126, 87, 194, 0.1);
+        }
+        
+        .toc h3 {
+            color: #5C6BC0;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .toc ul {
+            list-style-type: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .toc li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .toc a {
+            color: #5C6BC0;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            transition: all 0.3s;
+            padding: 10px 15px;
+            border-radius: 6px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .toc a:hover {
+            color: #7E57C2;
+            padding-left: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        /* Policy Content */
+        .policy-section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 20px;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .policy-section:last-of-type {
+            border-bottom: none;
+        }
+        
+        .policy-section h2 {
+            color: #5C6BC0;
+            font-size: 1.9rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .policy-section h2 i {
+            color: #7E57C2;
+        }
+        
+        .policy-section p {
+            margin-bottom: 1.2rem;
+            color: #555;
+            font-size: 1.05rem;
+        }
+        
+        .policy-section ul, .policy-section ol {
+            padding-left: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .policy-section li {
+            margin-bottom: 0.8rem;
+            color: #555;
+            font-size: 1.05rem;
+        }
+        
+        .highlight-box {
+            background-color: #f8f9ff;
+            border-left: 4px solid #7E57C2;
+            padding: 1.8rem;
+            margin: 1.8rem 0;
+            border-radius: 0 10px 10px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+        }
+        
+        .highlight-box h3 {
+            color: #5C6BC0;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #5C6BC0;
+            color: white;
+            padding: 3rem 0 2rem;
+            margin-top: 3rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: #FFD54F;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 25px;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .footer-links a {
+            color: #E8EAF6;
+            text-decoration: none;
+            transition: all 0.3s;
+            padding: 8px 15px;
+            border-radius: 6px;
+        }
+        
+        .footer-links a:hover {
+            color: #FFD54F;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        
+        .copyright {
+            font-size: 0.95rem;
+            color: #C5CAE9;
+            text-align: center;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+        
+        .app-purpose {
+            font-size: 1.1rem;
+            font-weight: 300;
+            text-align: center;
+            max-width: 800px;
+            margin: 2rem auto 3rem;
+            color: #666;
+            font-style: italic;
+            padding: 1.5rem;
+            background-color: #f8f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #FFD54F;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .toc ul {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+                gap: 2rem;
+            }
+            
+            .contact-info {
+                text-align: center;
+                width: 100%;
+            }
+            
+            .privacy-policy {
+                padding: 2rem 1.5rem;
+            }
+            
+            .policy-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .app-name {
+                font-size: 2rem;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .app-name {
+                font-size: 1.8rem;
+            }
+            
+            .policy-header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .logo-icon {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-area">
+                    <div class="logo-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div>
+                        <h1 class="app-name">Malagboters</h1>
+                        <p class="app-tagline">Smart Color Coordination for Confident Styling</p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <p><strong>Privacy Policy & Terms of Service</strong></p>
+                    <p>Last updated: January 15, 2024</p>
+                    <a href="mailto:cucionindonesia@gmail.com" class="email-link">
+                        <i class="fas fa-envelope"></i> cucionindonesia@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="privacy-policy">
+            <div class="policy-header">
+                <h1>Privacy Policy</h1>
+                <p class="effective-date">Effective Date: January 15, 2024</p>
+            </div>
+
+            <!-- App Purpose -->
+            <div class="app-purpose">
+                <i class="fas fa-info-circle"></i> Malagboters is a clothing color coordination application. You simply select a primary color, and the app intelligently generates color scheme suggestions for tops, pants, and shoes based on color harmony algorithms (complementary, analogous, triadic, monochromatic), helping you dress with more confidence and style for different occasions.
+            </div>
+
+            <!-- Table of Contents -->
+            <div class="toc">
+                <h3><i class="fas fa-list"></i> Table of Contents</h3>
+                <ul>
+                    <li><a href="#introduction"><i class="fas fa-chevron-right"></i> 1. Introduction</a></li>
+                    <li><a href="#information-collection"><i class="fas fa-chevron-right"></i> 2. Information We Collect</a></li>
+                    <li><a href="#use-of-information"><i class="fas fa-chevron-right"></i> 3. How We Use Your Information</a></li>
+                    <li><a href="#data-storage"><i class="fas fa-chevron-right"></i> 4. Data Storage & Local Processing</a></li>
+                    <li><a href="#information-sharing"><i class="fas fa-chevron-right"></i> 5. Information Sharing and Disclosure</a></li>
+                    <li><a href="#data-security"><i class="fas fa-chevron-right"></i> 6. Data Security</a></li>
+                    <li><a href="#user-rights"><i class="fas fa-chevron-right"></i> 7. Your Rights and Choices</a></li>
+                    <li><a href="#children-privacy"><i class="fas fa-chevron-right"></i> 8. Children's Privacy</a></li>
+                    <li><a href="#policy-changes"><i class="fas fa-chevron-right"></i> 9. Changes to This Policy</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> 10. Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Policy Content -->
+            <div class="policy-content">
+                <section id="introduction" class="policy-section">
+                    <h2><i class="fas fa-star"></i> 1. Introduction</h2>
+                    <p>Welcome to Malagboters. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our application. Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy, please do not access the application.</p>
+                    <p>We reserve the right to make changes to this Privacy Policy at any time and for any reason. We will alert you about any changes by updating the "Effective Date" of this Privacy Policy. You are encouraged to periodically review this Privacy Policy to stay informed of updates.</p>
+                    <p>Malagboters is designed as an offline-first application, with a focus on local data processing and privacy protection. Most features work without an internet connection, and your personal style preferences remain on your device.</p>
+                </section>
+
+                <section id="information-collection" class="policy-section">
+                    <h2><i class="fas fa-database"></i> 2. Information We Collect</h2>
+                    <p>We may collect information about you in a variety of ways. The information we may collect via the application includes:</p>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-user"></i> Personal Preferences</h3>
+                        <p>Color preferences, style choices, and fashion selections that you voluntarily save within the application to enhance your user experience.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-history"></i> Local History Data</h3>
+                        <p>Your color coordination history, saved outfits, and favorite combinations are stored locally on your device. This data is only accessible on your device and is not transmitted to our servers.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-mobile-alt"></i> Device Information</h3>
+                        <p>Technical information about your device, such as your device model, operating system version, and app usage statistics to help us improve app performance.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-paint-brush"></i> Color Selection Data</h3>
+                        <p>The colors you select and the combinations you create are processed locally on your device using our color harmony algorithms. This data remains private and is not shared unless you explicitly choose to export it.</p>
+                    </div>
+                </section>
+
+                <section id="use-of-information" class="policy-section">
+                    <h2><i class="fas fa-cogs"></i> 3. How We Use Your Information</h2>
+                    <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the application to:</p>
+                    <ul>
+                        <li>Generate personalized color coordination suggestions based on your selected primary color.</li>
+                        <li>Process color harmony algorithms (complementary, analogous, triadic, monochromatic) locally on your device.</li>
+                        <li>Save and organize your color coordination history for future reference.</li>
+                        <li>Enable search, filtering, and management of your saved color combinations.</li>
+                        <li>Improve the application's color suggestion algorithms based on anonymous, aggregated usage data (only with your consent).</li>
+                        <li>Support dark/light mode preferences based on your device settings.</li>
+                        <li>Provide an optimized user experience for your specific device.</li>
+                    </ul>
+                </section>
+
+                <section id="data-storage" class="policy-section">
+                    <h2><i class="fas fa-save"></i> 4. Data Storage & Local Processing</h2>
+                    <p>Malagboters is designed with privacy and offline functionality as core principles:</p>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-laptop-house"></i> Offline Operation</h3>
+                        <p>All application resources, including color algorithms, style databases, and processing logic are completely localized. The application functions fully without an internet connection.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-box"></i> Local Storage</h3>
+                        <p>Your data including color history, favorites, and preferences are stored exclusively on your device using secure local storage mechanisms. This data never leaves your device unless you explicitly choose to export it.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-microchip"></i> On-Device Processing</h3>
+                        <p>All color analysis, harmony calculations, and suggestion generation occur directly on your device. No personal color preferences or style choices are transmitted to external servers.</p>
+                    </div>
+                    
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-broom"></i> Data Management</h3>
+                        <p>You have full control over your data with features including search, pagination, pull-to-refresh, swipe-to-delete, and one-click clearing of your entire history.</p>
+                    </div>
+                </section>
+
+                <section id="information-sharing" class="policy-section">
+                    <h2><i class="fas fa-share-alt"></i> 5. Information Sharing and Disclosure</h2>
+                    <p>We do not sell, trade, or otherwise transfer your personally identifiable information. Your data remains on your device. However, we may share information in the following limited circumstances:</p>
+                    
+                    <h3><i class="fas fa-gavel"></i> Legal Compliance</h3>
+                    <p>If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation.</p>
+                    
+                    <h3><i class="fas fa-chart-line"></i> Anonymous Analytics</h3>
+                    <p>With your explicit consent, we may collect completely anonymous, aggregated usage statistics to help us improve the application. This data cannot be traced back to you personally.</p>
+                    
+                    <h3><i class="fas fa-handshake"></i> Service Providers</h3>
+                    <p>We may share non-personal, aggregated data with third-party service providers who assist us in application analytics and improvement, but only in anonymized form that cannot identify you.</p>
+                </section>
+
+                <section id="data-security" class="policy-section">
+                    <h2><i class="fas fa-shield-alt"></i> 6. Data Security</h2>
+                    <p>We use administrative, technical, and physical security measures to help protect your information. Since Malagboters operates primarily offline with data stored locally on your device:</p>
+                    <ul>
+                        <li>Your color preferences and style data are protected by your device's native security mechanisms</li>
+                        <li>No personal style data is transmitted over the internet unless you explicitly choose to share it</li>
+                        <li>All color processing occurs locally on your device</li>
+                        <li>We implement industry-standard security practices in our codebase</li>
+                    </ul>
+                    <p>While we have taken reasonable steps to secure the information within the application, please be aware that no security measures are perfect or impenetrable. We encourage you to use device-level security features to further protect your data.</p>
+                </section>
+
+                <section id="user-rights" class="policy-section">
+                    <h2><i class="fas fa-user-check"></i> 7. Your Rights and Choices</h2>
+                    <p>You have complete control over your data within Malagboters:</p>
+                    <ul>
+                        <li><strong>Access & Export:</strong> View and export your color history and preferences at any time</li>
+                        <li><strong>Deletion:</strong> Delete individual items with swipe-to-delete or clear all data with one-click</li>
+                        <li><strong>Search & Organization:</strong> Search through your history and organize with pagination</li>
+                        <li><strong>Theme Control:</strong> The app automatically adapts to your device's light/dark theme preference</li>
+                        <li><strong>Opt-Out:</strong> Choose not to share anonymous analytics (if this feature is enabled)</li>
+                    </ul>
+                    <p>Since your data is stored locally, you maintain physical control over it through your device. To completely remove all data, you can clear the app data through your device settings or use the one-click clear function within the app.</p>
+                </section>
+
+                <section id="children-privacy" class="policy-section">
+                    <h2><i class="fas fa-child"></i> 8. Children's Privacy</h2>
+                    <p>Our application is not intended for children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If you become aware that a child has provided us with personal information without parental consent, please contact us. If we become aware that we have collected personal information from a child under age 13 without verification of parental consent, we will take steps to remove that information from our servers.</p>
+                    <p>Malagboters is a fashion and color coordination tool that can be enjoyed by users of all ages with an interest in personal style, but we encourage parents to supervise their children's use of the application.</p>
+                </section>
+
+                <section id="policy-changes" class="policy-section">
+                    <h2><i class="fas fa-sync-alt"></i> 9. Changes to This Policy</h2>
+                    <p>We may update this Privacy Policy from time to time in order to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" at the top of this Privacy Policy.</p>
+                    <p>For significant changes that affect how we handle your data, we will provide a more prominent notice within the application itself. You are advised to review this Privacy Policy periodically for any changes.</p>
+                </section>
+
+                <section id="contact" class="policy-section">
+                    <h2><i class="fas fa-envelope"></i> 10. Contact Us</h2>
+                    <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
+                    <div class="highlight-box">
+                        <h3><i class="fas fa-envelope"></i> Email:</h3>
+                        <p><a href="mailto:cucionindonesia@gmail.com" class="email-link" style="display: inline-flex; background-color: #5C6BC0; color: white;">cucionindonesia@gmail.com</a></p>
+                        
+                        <h3><i class="fas fa-mobile-alt"></i> Application:</h3>
+                        <p><strong>Malagboters - Smart Color Coordination</strong></p>
+                        
+                        <h3><i class="fas fa-clock"></i> Response Time:</h3>
+                        <p>We strive to respond to all privacy-related inquiries within 3-5 business days.</p>
+                        
+                        <h3><i class="fas fa-info-circle"></i> About Malagboters:</h3>
+                        <p>Malagboters helps you create stylish outfits by generating complementary color schemes for tops, pants, and shoes based on color harmony algorithms. Select a primary color and get smart suggestions for different occasions.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Malagboters</div>
+                <div class="footer-links">
+                    <a href="#introduction">Privacy Policy</a>
+                    <a href="mailto:cucionindonesia@gmail.com">Contact Us</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Uninstall Guide</a>
+                    <a href="#">Data Management</a>
+                </div>
+                <p class="copyright">© 2024 Malagboters. All rights reserved. | Privacy Policy v2.0<br>
+                Malagboters is a fashion color coordination tool that works offline, respects your privacy, and helps you create stylish outfits with confidence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for table of contents links
+        document.querySelectorAll('.toc a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 30,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL without page jump
+                history.pushState(null, null, targetId);
+            });
+        });
+        
+        // Highlight current section in TOC when scrolling
+        const sections = document.querySelectorAll('.policy-section');
+        const navLinks = document.querySelectorAll('.toc a');
+        
+        const highlightCurrentSection = () => {
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (scrollY >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', highlightCurrentSection);
+        
+        // Initial call to set active section on page load
+        document.addEventListener('DOMContentLoaded', highlightCurrentSection);
+        
+        // Add active class styling
+        const style = document.createElement('style');
+        style.textContent = `
+            .toc a.active {
+                color: #7E57C2 !important;
+                font-weight: 700;
+                padding-left: 25px;
+                background-color: white;
+                box-shadow: 0 4px 12px rgba(126, 87, 194, 0.15);
+                border-left: 3px solid #FFD54F;
+            }
+            
+            .toc a.active i {
+                color: #FFD54F;
+            }
+            
+            /* Print styles */
+            @media print {
+                header, footer, .toc, .email-link {
+                    display: none;
+                }
+                
+                .privacy-policy {
+                    box-shadow: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                .policy-header h1 {
+                    -webkit-text-fill-color: #5C6BC0;
+                    background: none;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+        
+        // Update year in copyright automatically
+        document.addEventListener('DOMContentLoaded', function() {
+            const yearElement = document.querySelector('.copyright');
+            if (yearElement) {
+                const currentYear = new Date().getFullYear();
+                yearElement.innerHTML = yearElement.innerHTML.replace('2024', currentYear);
+            }
+        });
+    </script>
+</body>
+</html>
